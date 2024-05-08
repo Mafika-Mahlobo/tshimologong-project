@@ -54,6 +54,9 @@
 	--body-containers-padding: 3rem;
 	--body-padding: 1.4rem;
 	--body-left-padding: 6rem;
+	--input-border: .1rem solid lightblue;
+	--input-radius: .1rem;
+	--input-outline: none;
 }
 
 html{
@@ -134,6 +137,9 @@ html{
 
 .user-inputs-container input {
 		margin: 0 0 .5rem 0;
+		border: var(--input-border); 
+    border-radius: var(--input-radius); 
+    outline: var(--input-outline); 
 		
 }
 
@@ -196,6 +202,10 @@ html{
 	padding: .4rem;
 	width: 10%;
 }
+
+/*input[type="checkbox"] {
+   border-color: red;
+}*/
 
 
 /*media queries*/
