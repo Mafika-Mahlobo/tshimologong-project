@@ -21,16 +21,90 @@
 	<body class="body-container">
 		<form class="survey-form">
 			<section class="user-details-section">
-				personal details
+				<div class="label-container">
+					<p>Personal Details:</p>
+				</div>
+				<div class="user-inputs-container">
+					<label>Full Names</label>
+					<input type="text" name="">
+					<label>Email</label>
+					<input type="text" name="">
+					<label>Date of Birth</label>
+					<input type="date" name="">
+					<label>Contact Number</label>
+					<input type="phone" name="">
+				</div>
 			</section>
 			<section class="options-section">
-				options
+				<p>What is your favorite food?</p>
+				<ul class="options-list-container">
+					<li class="nav-item option-list-items">
+						<input type="checkbox" name="">
+						<label>Pizza</label>
+					</li>
+					<li class="nav-item option-list-items">
+						<input type="checkbox" name="">
+						<label>Pista</label>
+					</li class="nav-item option-list-items">
+					<li class="nav-item option-list-items">
+						<input type="checkbox" name="">
+						<label>Pap and Wors</label>
+					</li>
+					<li class="nav-item option-list-items">
+						<input type="checkbox" name="">
+						<label>Other</label>
+					</li>
+				</ul>
+				
 			</section>
 			<section class="rating-section">
-				rating
+				<p>Please rate your level of agreement on a scale from 1 to 5, with 1 being "strongly agree" and 5 being "strongly disagree."</p>
+				<table class="rating-table table-outside">
+					<th class="rating-table">
+
+						<!-- <td class="rating-table"></td> -->
+						<td class="rating-table rating-radios">Strongly Agree</td>
+						<td class="rating-table rating-radios">Agree</td>
+						<td class="rating-table rating-radios">Neutral</td>
+						<td class="rating-table rating-radios">Disagree</td>
+						<td class="rating-table rating-radios">Strongly Disagree</td>
+					</th>
+					<tr class="rating-table">
+						<td class="rating-table">I like to watch movies</td>
+						<td class="rating-table rating-radios"><input type="radio" name="movie" value="Strongly Agree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="movie" value="Agree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="movie" value="Neutral"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="movie" value="Disagree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="movie" value="Strongly Disagree"></td>
+					</tr>
+					<tr class="rating-table">
+						<td class="rating-table">I like to listen to radio</td>
+						<td class="rating-table rating-radios"><input type="radio" name="radio" value="Strongly Agree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="radio" value="Agree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="radio" value="Neutral"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="radio" value="Disagree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="radio" value="Strongly Disagree"></td>
+					</tr>
+					<tr>
+						<td class="rating-table">I like to eact out</td>
+						<td class="rating-table rating-radios"><input type="radio" name="eat" value="Strongly Agree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="eat" value="Agree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="eat" value="Neutral"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="eat" value="Disagree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="eat" value="Strongly Disagree"></td>
+					</tr>
+					<tr class="rating-table">
+						<td class="rating-table">I like to watch TV</td>
+						<td class="rating-table rating-radios"><input type="radio" name="tv" value="Strongly Agree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="tv" value="Agree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="tv" value="Neutral"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="tv" value="Disagree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="tv" value="Strongly Disagree"></td>
+					</tr>
+				</table>
 			</section>
 			<section class="submit-section">
-				submit
+				<button class="submit-button">SUBMIT</button>
 			</section>
 		</form>
 	</body>
