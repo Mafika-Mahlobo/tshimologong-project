@@ -15,10 +15,10 @@ CREATE TABLE Survey (
 	pasta BOOLEAN NOT NULL,
 	pap_and_wors BOOLEAN NOT NULL,
 	other BOOLEAN NOT NULL,
-	movies TYNYINT NOT NULL,
-	radio TYNYINT NOT NULL,
-	eat_out TYNYINT NOT NULL,
-	tv TYNYINT NOT NULL
+	movies TINYINT NOT NULL,
+	radio TINYINT NOT NULL,
+	eat_out TINYINT NOT NULL,
+	tv TINYINT NOT NULL
 );
 
 #display table to confirm creation

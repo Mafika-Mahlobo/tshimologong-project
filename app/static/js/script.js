@@ -41,7 +41,7 @@ $(document).ready( function() {
 			alert(a.val());
 		}
 
-		if (a.prop("checked")) {
+		if (b.prop("checked")) {
 			b.val(true);
 		} else {
 			b.val(false);
