@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta charset="description" content="Public survey">
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css') }}"> 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css') }}">  -->
+	<link rel="stylesheet" type="text/css" href="../static/styles/styles.css">
 	<title>Survey</title>
 </head>
 <body>
@@ -26,32 +26,32 @@
 				</div>
 				<div class="user-inputs-container">
 					<label>Full Names</label>
-					<input type="text" name="">
+					<input type="text" name="fullname" required>
 					<label>Email</label>
-					<input type="text" name="">
+					<input type="email" name="email" required>
 					<label>Date of Birth</label>
-					<input type="date" name="">
+					<input type="date" name="date" required>
 					<label>Contact Number</label>
-					<input type="phone" name="">
+					<input type="phone" name="phone_number" required>
 				</div>
 			</section>
 			<section class="options-section">
 				<p>What is your favorite food?</p>
 				<ul class="options-list-container">
 					<li class="nav-item option-list-items">
-						<input class="options-checkbox" type="checkbox" name="">
+						<input class="options-checkbox" type="checkbox" name="pizza">
 						<label>Pizza</label>
 					</li>
 					<li class="nav-item option-list-items">
-						<input class="options-checkbox" type="checkbox" name="">
+						<input class="options-checkbox" type="checkbox" name="pasta">
 						<label>Pista</label>
 					</li class="nav-item option-list-items">
 					<li class="nav-item option-list-items">
-						<input class="options-checkbox" type="checkbox" name="">
+						<input class="options-checkbox" type="checkbox" name="pap">
 						<label>Pap and Wors</label>
 					</li>
 					<li class="nav-item option-list-items">
-						<input  class="options-checkbox" type="checkbox" name="">
+						<input  class="options-checkbox" type="checkbox" name="other">
 						<label>Other</label>
 					</li>
 				</ul>
@@ -71,35 +71,35 @@
 					</th>
 					<tr class="rating-table">
 						<td class="rating-table">I like to watch movies</td>
-						<td class="rating-table rating-radios"><input type="radio" name="movie" value="Strongly Agree"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="movie" value="Agree"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="movie" value="Neutral"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="movie" value="Disagree"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="movie" value="Strongly Disagree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="movie" value="1" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="movie" value="2" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="movie" value="3" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="movie" value="4" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="movie" value="5" required></td>
 					</tr>
 					<tr class="rating-table">
 						<td class="rating-table">I like to listen to radio</td>
-						<td class="rating-table rating-radios"><input type="radio" name="radio" value="Strongly Agree"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="radio" value="Agree"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="radio" value="Neutral"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="radio" value="Disagree"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="radio" value="Strongly Disagree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="radio" value="1" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="radio" value="2" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="radio" value="3" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="radio" value="4" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="radio" value="5" required></td>
 					</tr>
 					<tr>
 						<td class="rating-table">I like to eact out</td>
-						<td class="rating-table rating-radios"><input type="radio" name="eat" value="Strongly Agree"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="eat" value="Agree"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="eat" value="Neutral"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="eat" value="Disagree"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="eat" value="Strongly Disagree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="eat" value="1" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="eat" value="2" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="eat" value="3" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="eat" value="4" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="eat" value="5" required></td>
 					</tr>
 					<tr class="rating-table">
 						<td class="rating-table">I like to watch TV</td>
-						<td class="rating-table rating-radios"><input type="radio" name="tv" value="Strongly Agree"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="tv" value="Agree"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="tv" value="Neutral"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="tv" value="Disagree"></td>
-						<td class="rating-table rating-radios"><input type="radio" name="tv" value="Strongly Disagree"></td>
+						<td class="rating-table rating-radios"><input type="radio" name="tv" value="1" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="tv" value="2" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="tv" value="3" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="tv" value="4" required></td>
+						<td class="rating-table rating-radios"><input type="radio" name="tv" value="5" required></td>
 					</tr>
 				</table>
 			</section>
@@ -110,3 +110,7 @@
 	</body>
 </body>
 </html>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/script.js"></script>
