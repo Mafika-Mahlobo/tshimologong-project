@@ -203,10 +203,39 @@ html{
 	width: 10%;
 }
 
-/*input[type="checkbox"] {
-   border-color: red;
-}*/
+.healding-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
 
+.result-heading {
+	text-align: center;
+}
+
+.results-body-container {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20%;
+	min-width: 60%;
+}
+
+.result-section {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 3rem;
+}
+
+.result-data {
+	display: flex;
+	flex-direction: column;
+	min-width: 50%;
+}
+
+.stats-container {
+	padding: 0;
+}
 
 /*media queries*/
 
