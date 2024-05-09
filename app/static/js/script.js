@@ -6,7 +6,7 @@ $(document).ready( function() {
 		const date = $("input[name='date']");
 		const phone = $("input[name='phone_number']");
 
-		return date;
+		//return all values (json or array)
 	}
 	
 
@@ -16,7 +16,7 @@ $(document).ready( function() {
 		const pap = $("input[name='pap']");
 		const other = $("input[name='other']");
 
-		return other;
+		//return all values (json or array)
 	}
 
 	function ratings() {
@@ -25,7 +25,15 @@ $(document).ready( function() {
 		const eat = $("input[name='eat']:checked");
 		const tv = $("input[name='tv']:checked");
 
-		return movie;
+		//return all values (json or array)
+	}
+
+	function getAge() {
+		//get and validate age here
+	}
+
+	function submit() {
+		//submit on button click
 	}
 
 	
