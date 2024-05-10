@@ -237,11 +237,5 @@ html{
 	padding: 0;
 }
 
-/*media queries*/
 
-@media screen and (max-width: 885px) {
-	.navigation {
-/*		flex-direction: row;*/
-		display: none;
-	}
-}
+/*media queries*/

@@ -42,9 +42,9 @@ def check_age(date_str):
 		 age(int): an integer representing age 
 	"""
 
-	birth_date = datetime.strpdate(date_str, "%Y-%m-%d")
+	birth_date = datetime.strptime(date_str, "%Y-%m-%d")
 	current = datetime.now()
-	date_difference = current = birth_date
+	date_difference = current - birth_date
 	age = date_difference.days // 365
 
 	return age
