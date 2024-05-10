@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta charset="description" content="Public survey">
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css') }}"> 
-	<!-- <link rel="stylesheet" type="text/css" href="../static/styles/styles.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css') }}">  -->
+	<link rel="stylesheet" type="text/css" href="../static/styles/styles.css">
 	<title>Survey</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
 		</section>
 	</header>
 	<body class="body-container">
-		<form class="survey-form">
+		<form class="survey-form" > 
 			<section class="user-details-section">
 				<div class="label-container">
 					<p>Personal Details:</p>
@@ -31,20 +31,21 @@
 					<input type="email" name="email" required>
 					<label>Date of Birth</label>
 					<input type="date" name="date" required>
+					<input type="hidden" id="date_value" name="age"></span>
 					<label>Contact Number</label>
-					<input type="phone" name="phone_number" required>
+					<input type="tel" name="phone_number" required>
 				</div>
 			</section>
 			<section class="options-section">
 				<p>What is your favorite food?</p>
 				<ul class="options-list-container">
 					<li class="nav-item option-list-items">
-						<input class="options-checkbox" type="checkbox" name="pizza">
+						<input class="options-checkbox" type="checkbox" name="pizza" value="false">
 						<label>Pizza</label>
 					</li>
 					<li class="nav-item option-list-items">
 						<input class="options-checkbox" type="checkbox" name="pasta">
-						<label>Pista</label>
+						<label>Pasta</label>
 					</li class="nav-item option-list-items">
 					<li class="nav-item option-list-items">
 						<input class="options-checkbox" type="checkbox" name="pap">
@@ -111,5 +112,5 @@
 </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
-<!-- <script type="text/javascript" src="../static/js/script.js"></script> -->
+<!-- <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script> -->
+<script type="text/javascript" src="../static/js/script.js"></script>
