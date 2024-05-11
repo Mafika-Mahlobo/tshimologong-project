@@ -9,11 +9,11 @@ This is a web-based survey portal built using Flask, HTML, CSS, jQuery, and Pyth
 - [Usage](#Usage)
 
 ## Introduction
-This project was built as part of an assessment to prove basic programming principles. Visit my Linkedin provile [here](https://www.linkedin.com/in/mafika-mahlobo-719a9a164/).
+This project was built as part of an assessment to prove basic programming principles. Visit my Linkedin profile [here](https://www.linkedin.com/in/mafika-mahlobo-719a9a164/).
 
 ## Dependencies
 - Flask: Web framework for Python
-- jQuery: JavaScript library for simplifying HTML DOM traversal and manipulation
+- Jquery: JavaScript library for simplifying HTML DOM traversal and manipulation
 - MYSQL Sever
 - Other Python libraries as listed in requirements.txt
 
@@ -39,7 +39,7 @@ This project was built as part of an assessment to prove basic programming princ
     cd tshimologong-project
     ```
 
-5. Install more dependacies using the following cammand or install them manually. (*you might need to run the following command in you C drive*)
+5. Install more dependancies using the following command or install manually. (*you might need to run the following command in you C drive*)
 
    ```bash
     pip install -r requirements.txt
@@ -49,6 +49,6 @@ This project was built as part of an assessment to prove basic programming princ
 
 - Start the Flask server:
 ```bash
-  python3 main.py
+  python3 app.py
   ```
 - Open your web browser and navigate to http://localhost:5000 to access the Library Management System.
