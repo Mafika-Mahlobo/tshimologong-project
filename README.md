@@ -19,7 +19,7 @@ This project was built as part of an assessment to prove basic programming princ
 
 ## Installation
 
-1. You need to have python3 installed on you machine.
+1. You need to have python3 installed on your machine.
 
 2. Download and install MYSQL (*folow prompt to creaet a user account*).
 
