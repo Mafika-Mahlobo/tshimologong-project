@@ -24,17 +24,16 @@ This project was built as part of an assessment to prove basic programming princ
 2. Download and install MYSQL (*folow prompt to creaet a user account*).
 
 3. Create Database (*you might need to run the command inside MYSQL folder*).
+   ```bash
+   mysql -u {your usernme} -p < createDB.sql
+   ```
 
-    ```bash
- mysql -u {your usernme} -p < createDB.sql
-    ```
-
-4. Clone the repository to your local machine:
+5. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/Mafika-Mahlobo/tshimologong-project
    ```
 
-5. Cd to the project folder
+6. Cd to the project folder
     ```bash
     cd tshimologong-project
     ```
