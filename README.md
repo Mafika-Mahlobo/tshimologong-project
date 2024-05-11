@@ -9,7 +9,7 @@ This is a web-based survey portal built using Flask, HTML, CSS, jQuery, and Pyth
 - [Usage](#Usage)
 
 ## Introduction
-This project was built as part of an assessment to prove basic programming principles. visit the source code in my githun profile [here](https://github.com/Mafika-Mahlobo/tshimologong-project). Also visit my Linkedin provile [here](https://www.linkedin.com/in/mafika-mahlobo-719a9a164/).
+This project was built as part of an assessment to prove basic programming principles. visit the source code in my githun profile. Also visit my Linkedin provile [here](https://www.linkedin.com/in/mafika-mahlobo-719a9a164/).
 
 ## Dependencies
 - Flask: Web framework for Python
