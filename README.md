@@ -1,6 +1,6 @@
 # Survey web application
 
-This is a web-based survey portal built using Flask, HTML, CSS, jQuery, and Python.
+This is a web-based survey portal, built using Flask, HTML, CSS, jQuery, and Python.
 
 ## Table of Contents
 - [Introduction](#Introduction)
