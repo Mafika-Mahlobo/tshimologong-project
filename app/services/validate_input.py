@@ -2,6 +2,8 @@
 Validate user input from form
 """
 
+import mysql.connector
+from ..utils.DBconnection import get_DBconnection
 from datetime import datetime
 import re
 
@@ -28,25 +30,54 @@ def check_phone(phone):
 	return is_valid
 
 
-
-
-def check_age(date_str):
-	"""
-	Checks personal details.
+def check_email(email):
+	""" 
+	Checks if email exist in the datebase.
 
 	Args:
-		date_str (str): a string representing a date of birth
+		email (str): String representing email address to be checked.
 
 	Returns:
-
-		 age(int): an integer representing age 
+		(bool): True if email exists, false if it does not.
 	"""
 
-	birth_date = datetime.strptime(date_str, "%Y-%m-%d")
-	current = datetime.now()
-	date_difference = current - birth_date
-	age = date_difference.days // 365
+	conn = get_DBconnection()
+	cursor = conn.cursor()
 
-	return age
+	query = "SELECT * FROM Survey WHERE `email` = %s"
+
+	try:
+		cursor.execute(query, email)
+		respose = cursor.fetchall()
+
+		if (len(respose) > 0):
+			return True
+		return False
+	
+	except mysql.connector.Error as err:
+		cursor.close()
+		conn.close()
+		return f"Error {err}"
+
+
+
+# def check_age(date_str):
+# 	"""
+# 	Checks personal details.
+
+# 	Args:
+# 		date_str (str): a string representing a date of birth
+
+# 	Returns:
+
+# 		 age(int): an integer representing age 
+# 	"""
+
+# 	birth_date = datetime.strptime(date_str, "%Y-%m-%d")
+# 	current = datetime.now()
+# 	date_difference = current - birth_date
+# 	age = date_difference.days // 365
+
+# 	return age
 
 	

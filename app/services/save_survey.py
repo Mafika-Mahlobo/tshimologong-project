@@ -2,7 +2,7 @@
 Saves survey to database
 """
 
-from ..utils.Dbconnection import get_DBconnection
+from ..utils.DBconnection import get_DBconnection
 import mysql.connector
 
 def add(survey):

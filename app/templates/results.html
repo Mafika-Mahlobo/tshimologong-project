@@ -23,6 +23,7 @@
             <h2 class="result-heading">Survey Results</h2>
         </head>
 		<section>
+            <span class="survey-message">{{ results_message }}</span>
             <div class="results-body-container">
                 <section class="result-section">
                     <div class="result-data">
@@ -32,11 +33,11 @@
                         <p>Youngest person who participated in survey:</p>
                     </div>
                     <div class="result-data stats-container">
-                        <p>#</p>
-                        <p>#</p>
-                        <p>#</p>
-                        <p>#</p>
-                    </div>
+                        <p>{{ total }}</p>
+                        <p>{{ average_age }}</p>
+                        <p>{{ old_name }} ({{ old_age }} years old)</p>
+                        <p>{{young_name}} ({{ young_age }} years old)</p>
+                    </div> 
                 </section>
                 <section class="result-section">
                     <div class="result-data">
@@ -45,9 +46,9 @@
                         <P>Percentage of people who like Pap and Wors:</P>
                     </div>
                     <div class="result-data stats-container">
-                        <p>#% Pizza</p>
-                        <p>#% Pasta</p>
-                        <p>#% Pap and Wors</p>
+                        <p>{{ pizza }}% Pizza</p>
+                        <p>{{ pasta }}% Pasta</p>
+                        <p>{{ pap }}% Pap and Wors</p>
                     </div>
                 </section>
                 <section class="result-section">
@@ -58,10 +59,10 @@
                         <p>People who like to watch TV:</p>
                     </div>
                     <div class="result-data stats-container">
-                        <p>#</p>
-                        <p>#</p>
-                        <p>#</p>
-                        <p>#</p>
+                        <p>{{ movie_rating }}</p>
+                        <p>{{ radio }}</p>
+                        <p>{{ eat }}</p>
+                        <p>{{ tv }}</p>
                     </div>
                 </section>
             </div>
@@ -69,3 +70,5 @@
 	</body>
 </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>

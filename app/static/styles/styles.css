@@ -237,5 +237,15 @@ html{
 	padding: 0;
 }
 
+.survey-message {
+	/* display: none; */
+	margin: 15% 0 0 47%;
+}
 
-/*media queries*/
+.rating-table-head {
+	background-color: #d7dbdc;
+}
+
+.table-border {
+	border-color: red;
+}

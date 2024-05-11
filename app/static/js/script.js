@@ -1,14 +1,11 @@
 $(document).ready( function() {
 
-
-	var pizza = pasta = pap = other = false;
-
 	$("input[name='pizza']").on("change", function() {
 
 		if ($(this).is(":checked")) {
-			pizza = true;
+			$(this).val(1);
 		} else {
-			pizza = false;
+			$(this).val(0);
 		}
 
 	});
@@ -16,9 +13,9 @@ $(document).ready( function() {
 	$("input[name='pasta']").on("change", function() {
 
 		if ($(this).is(":checked")) {
-			pasta = true;
+			$(this).val(1);
 		} else {
-			pasta = false;
+			$(this).val(0);
 		}
 
 	});
@@ -26,9 +23,9 @@ $(document).ready( function() {
 	$("input[name='pap']").on("change", function() {
 
 		if ($(this).is(":checked")) {
-			pap = true;
+			$(this).val(1);
 		} else {
-			pap = false;
+			$(this).val(0);
 		}
 
 	});
@@ -36,25 +33,21 @@ $(document).ready( function() {
 	$("input[name='other']").on("change", function() {
 
 		if ($(this).is(":checked")) {
-			other = true;
+			$(this).val(1);
 		} else {
-			other = false;
+			$(this).val(0);
 		}
 
 	});
-
 
 	function checkAge(dateStr) {
     	
     	var birthDate = new Date(dateStr);
     
-    	// Get the current date
     	var currentDate = new Date();
     
-    	// Calculate the difference in milliseconds between the current date and birth date
     	var dateDifference = currentDate - birthDate;
     
-    	// Convert milliseconds to years (approximately)
     	var age = Math.floor(dateDifference / (1000 * 60 * 60 * 24 * 365));
     
     	return age;
@@ -68,12 +61,17 @@ $(document).ready( function() {
    			alert("You must be over 5 year old, and younger than 120 years!");
    			location.reload();
    		} else {
-   			$("#date_value").val(age);
+   			parseInt($("#date_value").val(age));
    		}
 
 
    	});
 
+	if ($(".survey-message").text().trim() != "") {
+		$(".results-body-container").css("display", "none");
+		$(".survey-message").css("display", "block");
+	} 
 
+	// $(this).delay(3000).fadeOut('slow');
 });
 	

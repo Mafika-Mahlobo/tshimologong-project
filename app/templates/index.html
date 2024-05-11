@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta charset="description" content="Public survey">
-	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css') }}">  -->
-	<link rel="stylesheet" type="text/css" href="../static/styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css') }}"> 
+	<!-- <link rel="stylesheet" type="text/css" href="../static/styles/styles.css"> -->
 	<title>Survey</title>
 </head>
 <body>
@@ -19,19 +19,21 @@
 		</section>
 	</header>
 	<body class="body-container">
-		<form class="survey-form" > 
+		<span>{{ error }}</span>
+		<span>{{ success }}</span>
+		<form class="survey-form" action="/submit" method="post"> 
 			<section class="user-details-section">
 				<div class="label-container">
 					<p>Personal Details:</p>
 				</div>
 				<div class="user-inputs-container">
 					<label>Full Names</label>
-					<input type="text" name="fullname" required>
+					<input type="text" name="fullname" required >
 					<label>Email</label>
 					<input type="email" name="email" required>
 					<label>Date of Birth</label>
 					<input type="date" name="date" required>
-					<input type="hidden" id="date_value" name="age"></span>
+					<input type="hidden" id="date_value" name="age">
 					<label>Contact Number</label>
 					<input type="tel" name="phone_number" required>
 				</div>
@@ -40,7 +42,7 @@
 				<p>What is your favorite food?</p>
 				<ul class="options-list-container">
 					<li class="nav-item option-list-items">
-						<input class="options-checkbox" type="checkbox" name="pizza" value="false">
+						<input class="options-checkbox" type="checkbox" name="pizza" id="g">
 						<label>Pizza</label>
 					</li>
 					<li class="nav-item option-list-items">
@@ -61,16 +63,16 @@
 			<section class="rating-section">
 				<p>Please rate your level of agreement on a scale from 1 to 5, with 1 being "strongly agree" and 5 being "strongly disagree."</p>
 				<table class="rating-table table-outside">
-					<th class="rating-table">
+					<th class="rating-table rating-table-head">
 
 						<!-- <td class="rating-table"></td> -->
-						<td class="rating-table rating-radios">Strongly Agree</td>
-						<td class="rating-table rating-radios">Agree</td>
-						<td class="rating-table rating-radios">Neutral</td>
-						<td class="rating-table rating-radios">Disagree</td>
-						<td class="rating-table rating-radios">Strongly Disagree</td>
+						<td class="rating-table rating-radios rating-table-head">Strongly Agree</td>
+						<td class="rating-table rating-radios rating-table-head">Agree</td>
+						<td class="rating-table rating-radios rating-table-head">Neutral</td>
+						<td class="rating-table rating-radios rating-table-head">Disagree</td>
+						<td class="rating-table rating-radios rating-table-head">Strongly Disagree</td>
 					</th>
-					<tr class="rating-table">
+					<tr class="rating-table table-border">
 						<td class="rating-table">I like to watch movies</td>
 						<td class="rating-table rating-radios"><input type="radio" name="movie" value="1" required></td>
 						<td class="rating-table rating-radios"><input type="radio" name="movie" value="2" required></td>
@@ -112,5 +114,5 @@
 </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script> -->
-<script type="text/javascript" src="../static/js/script.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+<!-- <script type="text/javascript" src="../static/js/script.js"></script> -->
