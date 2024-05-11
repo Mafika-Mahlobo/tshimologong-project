@@ -197,10 +197,12 @@ html{
 	align-items: center;
 	color: var(--buttons-text-color-light);
 	background-color: var(--body-buttons-background);
-	font-size: var(--body-text-size-small);
+	font-size: 1rem;
 	border: none;
-	padding: .4rem;
+	padding: .5rem;
 	width: 10%;
+	height: 10%;
+	
 }
 
 .healding-container {
@@ -246,6 +248,25 @@ html{
 	background-color: #d7dbdc;
 }
 
+
 .table-border {
-	border-color: red;
+	border:   2px lightblue solid;
 }
+
+.input[type='radio'] {
+	color: #42b8f8;
+}
+
+.response {
+	display: inline-block;
+	margin-left: 35%;
+}
+
+#error {
+	color: red;
+}
+
+#success {
+	color: green;
+}
+
