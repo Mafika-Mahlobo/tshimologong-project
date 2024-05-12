@@ -4,30 +4,6 @@ Validate user input from form
 
 import mysql.connector
 from ..utils.DBconnection import get_DBconnection
-from datetime import datetime
-import re
-
-
-def check_phone(phone):
-	"""
-	Check phone number
-
-	Args:
-		phone (str): a string representing a phone number
-
-	Returns:
-		is_valid (bool): true if number is valid. false otherwise
-	"""
-
-	is_valid = False
-	pattren = "^0\d{9}$"
-
-	match = re.pattren(pattren, phone)
-
-	if (match):
-		is_valid = True
-
-	return is_valid
 
 
 def check_email(email):

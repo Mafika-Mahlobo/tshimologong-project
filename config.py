@@ -1,8 +1,8 @@
-# config.py
+import os
 
 class Config:
-    # MySQL Database Configuration
+    
     MYSQL_HOST = 'localhost'
-    MYSQL_USER = #Your username,
-    MYSQL_PASSWORD = #Your password
-    MYSQL_DB = 'SurveysDB',
+    MYSQL_USER = os.environ.get('MYSQL_USER')
+    MYSQL_PASSWORD = os.environ.get('MYSQL_PASSWORD')
+    MYSQL_DB = 'SurveysDB'

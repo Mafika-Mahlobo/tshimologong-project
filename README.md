@@ -15,7 +15,8 @@ This project was built as part of a assessment to prove basic programming princi
 - Flask: Web framework for Python
 - jQuery: JavaScript library for simplifying HTML DOM traversal and manipulation
 - MYSQL Sever
-- Other Python libraries as listed in requirements.txt
+- python-dotenv
+- Other Python Dependancies as listed in requirements.txt
 
 ## Installation
 
@@ -23,7 +24,13 @@ This project was built as part of a assessment to prove basic programming princi
 
 2. Download and install MYSQL (*folow prompt to creaet a user account*).
 
-3. Create Database (*you might need to run the command inside MYSQL folder*).
+3. Create a .env file in the root folder and save your MYSQL details as shown below.
+
+   ```bash
+   MYSQL_USER= #your username
+   MYSQL_PASSWORD= #your password
+   ```
+ Create Database (*you might need to run the command inside MYSQL folder*).
 
     ```bash
  mysql -u {your usernme} -p < createDB.sql
@@ -39,7 +46,7 @@ This project was built as part of a assessment to prove basic programming princi
     cd tshimologong-project
     ```
 
-5. Install more dependacies using the following cammand or install them manually. (*you might need to run the following command in you C drive*)
+6. Install more dependacies using the following cammand or install them manually. (*you might need to run the following command in you C drive*)
 
    ```bash
     pip install -r requirements.txt
