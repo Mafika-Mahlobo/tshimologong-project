@@ -26,36 +26,38 @@ This project was built as part of a assessment to prove basic programming princi
 
 3. Create a .env file in the root folder and save your MYSQL details as shown below.
 
-   ```bash
-   MYSQL_USER= #your username
-   MYSQL_PASSWORD= #your password
-   ```
- Create Database (*you might need to run the command inside MYSQL folder*).
+```bash
+MYSQL_USER= #your username
+MYSQL_PASSWORD= #your password
+```
 
-    ```bash
- mysql -u {your usernme} -p < createDB.sql
-    ```
+4. Create Database (*you might need to run the command inside MYSQL folder*).
 
-4. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/Mafika-Mahlobo/tshimologong-project
-   ```
+```bash
+mysql -u {your usernme} -p < createDB.sql
+```
 
-5. Cd to the project folder
-    ```bash
-    cd tshimologong-project
-    ```
+5. Clone the repository to your local machine:
+```bash
+git clone https://github.com/Mafika-Mahlobo/tshimologong-project
+```
 
-6. Install more dependacies using the following cammand or install them manually. (*you might need to run the following command in you C drive*)
+6. Cd to the project folder
+```bash
+cd tshimologong-project
+```
 
-   ```bash
-    pip install -r requirements.txt
-   ```
+7. Install more dependacies using the following cammand or install them manually. (*you might need to run the following command in you C drive*)
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
 
 - Start the Flask server:
+
 ```bash
-  python3 main.py
-  ```
+python3 main.py
+```
 - Open your web browser and navigate to http://localhost:5000 to access the Library Management System.
