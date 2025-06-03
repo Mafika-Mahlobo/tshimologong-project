@@ -1,9 +1,11 @@
 from app import app
+from dotenv import load_dotenv
 from flask import render_template, request, jsonify
 from app.services.validate_input import check_email
 from app.services.save_survey import add
 from app.services.compute_results import total_surveys, average_age, oldest, youngest, pizza, pasta, pap_wors, movie, radio, eating_out, tv
 
+load_dotenv()
 
 @app.route("/")
 def main():
