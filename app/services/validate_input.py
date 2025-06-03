@@ -2,13 +2,12 @@
 Validate user input from form
 """
 
-import mysql.connector
+import psycopg2
 from ..utils.DBconnection import get_DBconnection
-
 
 def check_email(email):
 	""" 
-	Checks if email exist in the datebase.
+	Checks if email exists in the database.
 
 	Args:
 		email (str): String representing email address to be checked.
@@ -20,21 +19,22 @@ def check_email(email):
 	conn = get_DBconnection()
 	cursor = conn.cursor()
 
-	query = "SELECT * FROM Survey WHERE `email` = %s"
+	query = "SELECT * FROM Survey WHERE email = %s"
 
 	try:
-		cursor.execute(query, email)
-		respose = cursor.fetchall()
+		cursor.execute(query, (email,))
+		response = cursor.fetchall()
 
-		if (len(respose) > 0):
+		if len(response) > 0:
 			return True
 		return False
-	
-	except mysql.connector.Error as err:
-		cursor.close()
-		conn.close()
+
+	except psycopg2.Error as err:
 		return f"Error {err}"
 
+	finally:
+		cursor.close()
+		conn.close()
 
 
 # def check_age(date_str):
@@ -45,7 +45,6 @@ def check_email(email):
 # 		date_str (str): a string representing a date of birth
 
 # 	Returns:
-
 # 		 age(int): an integer representing age 
 # 	"""
 
@@ -55,5 +54,3 @@ def check_email(email):
 # 	age = date_difference.days // 365
 
 # 	return age
-
-	
