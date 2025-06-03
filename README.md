@@ -27,11 +27,11 @@ This project was built as part of an assessment to prove basic programming princ
 3. Create a .env file in the root folder and save your MYSQL details as shown below.
 
 ```bash
-MYSQL_USER= #your username
-MYSQL_PASSWORD= #your password
+MYSQL_USER="your username"
+MYSQL_PASSWORD="your password"
 ```
 
-4. Create Database (*you might need to run the command inside the MYSQL folder*).
+4. Create Database.
 
 ```bash
 mysql -u {your usernme} -p < createDB.sql
@@ -42,12 +42,12 @@ mysql -u {your usernme} -p < createDB.sql
 git clone https://github.com/Mafika-Mahlobo/tshimologong-project
 ```
 
-6. Cd to the project folder
+6. cd to the project folder
 ```bash
 cd tshimologong-project
 ```
 
-7. Install more dependencies using the following command or install them manually. (*you might need to run the following command in you C drive*)
+7. Install more dependencies using the following command or install them manually.
 
 ```bash
 pip install -r requirements.txt
