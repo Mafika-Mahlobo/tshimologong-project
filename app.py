@@ -1,4 +1,5 @@
 from app import app
+import os
 from dotenv import load_dotenv
 from flask import render_template, request, jsonify
 from app.services.validate_input import check_email
@@ -6,6 +7,7 @@ from app.services.save_survey import add
 from app.services.compute_results import total_surveys, average_age, oldest, youngest, pizza, pasta, pap_wors, movie, radio, eating_out, tv
 
 load_dotenv()
+port = int(os.environ.get("PORT", 5000))
 
 @app.route("/")
 def main():
@@ -69,4 +71,4 @@ def submit():
         return render_template("index.html", error="You have already submitted your response")
         
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0", port=port)
