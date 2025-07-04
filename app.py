@@ -69,4 +69,4 @@ def submit():
         return render_template("index.html", error="You have already submitted your response")
         
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

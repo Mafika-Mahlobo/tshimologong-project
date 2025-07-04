@@ -13,7 +13,8 @@ def get_DBconnection():
 		host=current_app.config['MYSQL_HOST'],
 		user=current_app.config['MYSQL_USER'],
 		password=current_app.config['MYSQL_PASSWORD'],
-		database=current_app.config['MYSQL_DB']
+		database=current_app.config['MYSQL_DB'],
+		port=current_app.config['MYSQL_PORT']
 		)
 	
 	return conn
