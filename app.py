@@ -9,9 +9,9 @@ from app.services.compute_results import total_surveys, average_age, oldest, you
 load_dotenv()
 port = int(os.environ.get("PORT", 5000))
 
-@app.route("/")
+@app.route("/", strict_slashes=False)
 def main():
-    return render_template("index.html")
+    return "Hello, Railway"
 
 @app.route("/results")
 def survery_results():
