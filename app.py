@@ -8,10 +8,7 @@ port = int(os.environ.get("PORT", 5000))
 
 @app.route("/")
 def main():
-    try:
-        return render_template("index.html")
-    except Exception as e:
-        return f'Gunicorn issue:  {str(e)}', 500
+    return "Hello Railway"
 
 @app.route("/results")
 def survery_results():
