@@ -14,7 +14,7 @@ def main():
     try:
         return render_template("index.html")
     except Exception as e:
-        return f'Gunicorn issue:  {e}'
+        return f'Gunicorn issue:  {str(e)}', 500
 
 @app.route("/results")
 def survery_results():
